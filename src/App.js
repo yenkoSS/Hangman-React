@@ -62,7 +62,7 @@ function reducer(state, action) {
     }
 
     case "setLetter": {
-      return { ...state, input: action.payload };
+      return { ...state, input: action.payload.toLowerCase() };
     }
 
     case "resetLetter": {
