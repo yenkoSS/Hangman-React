@@ -45,12 +45,10 @@ function reducer(state, action) {
     }
 
     case "wrongLetter": {
-      console.log(state.lives);
       return { ...state, lives: state.lives - 1 };
     }
 
     case "reset": {
-      console.log("reset entered");
       return { ...initialState };
     }
 
@@ -99,7 +97,6 @@ function App() {
   const triggerEffect = useRef(false);
 
   useEffect(() => {
-    console.log("useEffect");
     if (triggerEffect.current) {
       function isWon() {
         if (state.displayWord === state.word) {
@@ -110,14 +107,12 @@ function App() {
       }
       isWon();
     } else {
-      console.log("Entered else");
       triggerEffect.current = true;
       return;
     }
   }, [state.displayWord]);
 
   useEffect(() => {
-    console.log("useEffect");
     if (triggerEffect.current) {
       function isDead() {
         if (state.lives === 0) {
@@ -128,7 +123,6 @@ function App() {
       }
       isDead();
     } else {
-      console.log("Entered else");
       triggerEffect.current = true;
       return;
     }
@@ -260,7 +254,7 @@ function App() {
 
   function updateDisplayWord(letter, word, hiddenWord) {
     let indexes = [];
-    console.log(hiddenWord);
+
     hiddenWord = hiddenWord.split("");
     for (let i = 0; i <= word.length; i++) {
       if (word[i] === letter) {
@@ -271,7 +265,7 @@ function App() {
     for (let i = 0; i <= indexes.length; i++) {
       hiddenWord[indexes[i]] = letter;
     }
-    console.log(hiddenWord);
+
     hiddenWord = hiddenWord.join("");
     return hiddenWord;
   }
@@ -307,7 +301,6 @@ function App() {
           state.displayWord
         );
         dispatch({ type: "renderWord", payload: updatedDisplayWord });
-        console.log(state.displayWord);
       } else if (state.word === state.displayWord) {
         dispatch({ type: "won" });
       } else {
