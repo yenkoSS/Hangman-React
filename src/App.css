@@ -15,16 +15,3 @@ html {
   font-family: "Gochi Hand", sans-serif;
   font-size: 62.5%;
 }
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffee;
-}
-
-.img-react {
-  display: inline-block;
-  width: 2rem;
-}

@@ -36,3 +36,31 @@ body {
   width: 4rem;
   margin-left: 2rem;
 }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+    width: 20rem !important;
+  }
+
+  .button-53 {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+}

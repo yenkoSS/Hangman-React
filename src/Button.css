@@ -1,5 +1,5 @@
 .btn-custom {
-  width: 200px;
+  width: 12.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-right: 20px;
@@ -30,7 +30,7 @@
   text-align: center;
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
-  width: 200px;
+  width: 12.5rem;
   max-width: 460px;
   position: relative;
   cursor: pointer;
