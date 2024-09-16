@@ -1,0 +1,6 @@
+.poster {
+  width: 150px;
+  height: auto;
+  transform: rotate(-5deg);
+  margin-bottom: 3rem;
+}

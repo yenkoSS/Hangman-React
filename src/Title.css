@@ -1,0 +1,7 @@
+.heading1 {
+  font-family: "Gochi Hand";
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: rgb(63, 28, 28);
+  transform: rotate(-4deg);
+}

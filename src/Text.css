@@ -1,0 +1,32 @@
+.text-muted {
+  color: rgb(36, 36, 36);
+  font-family: "Caveat", sans-serif;
+  text-align: justify;
+  font-size: 3rem;
+  transform: rotate(3deg);
+  margin-bottom: 3rem;
+}
+
+.text-error {
+  color: red;
+  font-family: "Caveat", sans-serif;
+  font-size: 1rem;
+  transform: rotate(-2deg);
+  margin-top: 1rem;
+}
+
+.text-win {
+  color: green;
+  font-family: "Caveat", sans-serif;
+  font-size: 2rem;
+  transform: rotate(-2deg);
+  margin-bottom: 2rem;
+}
+
+.text-dead {
+  color: red;
+  font-family: "Caveat", sans-serif;
+  font-size: 2rem;
+  transform: rotate (-2deg);
+  margin-bottom: 2rem;
+}
